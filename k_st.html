@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <style media="screen">
+      body{
+        font-family: font-family: 'Lora', serif;
+        font-size: 20px;
+        color: #444444;
+      }
+      li{
+        list-style-type: none;
+      }
+      .clear{
+        clear: both;
+      }
+      header{
+        width :1920px;
+        height: 100px;
+        margin: 0 auto;
+          /*border: solid 1px red;*/
+      }
+      #logo{/*로고 */
+        font-size:50px;
+        font-weight:bold;
+      text-align : left;
+      margin-top:40px;
+
+        }
+        #logo a {
+           margin: 150px 0 0 50px;
+         }
+        #logo a:  hover: black;
+
+        #menus{
+          width :1920px;
+          height: 130px;
+          float: center;
+            /*border: solid 1px red;*/
+        }
+
+        #main_menu{
+          text-align : right;
+          float : right;
+          font-family: font-family: 'Lora', serif;
+          font-size: 30px;
+          color: black;
+          margin: 0 100px 20px 0;
+        /*border: solid 1px red;*/
+        }
+        #main_menu li{
+          display: inline;
+          margin-left: 80px;
+            float : right;
+        }
+        #main_img{
+          background-position: top center;
+          margin-top: 10px;
+      }
+
+
+
+            .dropbtn {
+                 padding: 16px;
+                font-size: 35px;
+                  border: none;
+                }
+
+                              .dropdown {
+                                position: relative;
+                                  display: inline-block;
+                                  padding: 3px;
+                                       }
+
+                          .dropdown-content {
+                           display: none;
+                              position: absolute;
+                                background-color: #FFFFFF;
+                          min-width:50px;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            z-index: 1;
+                        }
+
+                          .dropdown-content a {
+                           font-size: 24px;
+                            color: black;
+                            padding: 3px 4px;
+                        text-decoration: none;
+                              display: block;
+
+                         }
+
+                    .dropdown-content a:hover {background-color: #F0DCD4;}
+
+                    .dropdown:hover .dropdown-content {display: block;}
+
+                    .dropdown:hover .dropbtn {background-color: #c5cdd7;}
+                      .dropdown:hover .dropbtn a { color: white;}
+
+
+
+            a {
+              color: black;
+              text-decoration: none;
+            }
+            a:link { color: black; text-decoration: none;}
+            a:visited { color: black; text-decoration: none;}
+            a:hover { color: white; /*background-color: white;*/ text-decoration: none;}
+
+            #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#F0DCD4;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #c5cdd7;
+}
+    </style>
+
+
+<title>타이포그래피</title>
+  </head>
+
+  <body>
+    <header>
+    <nav id='menus'>
+
+      <div id="logo">
+        <a href="./main.html">타이포그래피</a>
+
+    <ul id='main_menu'>
+
+         <div class="dropdown">
+      <li><button class="dropbtn"><a href="./a.html">1. Story</a></button>
+        <ul><div class="dropdown-content">
+        <li><a href="./b_st.html">Baskervile</a></li>
+        <li><a href="./k_st.html">HY고딕A1</a></li>
+      </div>  </ul>
+      </li>
+      </div>
+
+          <div class="dropdown">
+      <li><button class="dropbtn"><a href="./b.html">2. Space</a></button>
+        <ul><div class="dropdown-content">
+       <li><a href="./b_sp.html">Baskervile</a></li>
+       <li><a href="./k_sp.html">HY고딕A1</a></li>
+       </div></ul>
+       </li>
+       </div>
+
+
+            <div class="dropdown">
+      <li><button class="dropbtn"><a href="./c.html">3. Weight</a></button>
+        <ul><div class="dropdown-content">
+       <li><a href="./b_si.html">Baskervile</a></li>
+       <li><a href="./k_si.html">HY고딕A1</a></li>
+      </div> </ul>
+      </li>
+      </div>
+
+        </ul>
+            </div>
+
+
+      </nav>
+    </header>
+
+<center>
+    <section id='main_img'>
+    <img src="./k1.jpg" width="1900">
+    </section>
+  </center>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  </body>
+</html>
